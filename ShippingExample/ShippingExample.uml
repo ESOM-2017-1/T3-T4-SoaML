@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0z8n4DWKEeeU5LD2312PpA" name="RootElement">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_05daADWKEeeU5LD2312PpA" name="ShippingExample">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_VPDBQDWLEeeU5LD2312PpA" name="sender:ScheduleUpdating" coveredBy="_uMZPoTWLEeeU5LD2312PpA _xxVWATWLEeeU5LD2312PpA _zwhmkjWLEeeU5LD2312PpA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Z6rp8DWLEeeU5LD2312PpA" name="shipper:ShippingOrder" coveredBy="_uMZPojWLEeeU5LD2312PpA _xxVWADWLEeeU5LD2312PpA _zwhmkTWLEeeU5LD2312PpA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uMZPoTWLEeeU5LD2312PpA" name="MessageSend" covered="_VPDBQDWLEeeU5LD2312PpA" message="_uMZPoDWLEeeU5LD2312PpA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uMZPojWLEeeU5LD2312PpA" name="MessageRecv" covered="_Z6rp8DWLEeeU5LD2312PpA" message="_uMZPoDWLEeeU5LD2312PpA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xxVWADWLEeeU5LD2312PpA" name="MessageSend0" covered="_Z6rp8DWLEeeU5LD2312PpA" message="_xxUu8DWLEeeU5LD2312PpA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xxVWATWLEeeU5LD2312PpA" name="MessageRecv0" covered="_VPDBQDWLEeeU5LD2312PpA" message="_xxUu8DWLEeeU5LD2312PpA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zwhmkTWLEeeU5LD2312PpA" name="MessageSend1" covered="_Z6rp8DWLEeeU5LD2312PpA" message="_zwhmkDWLEeeU5LD2312PpA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zwhmkjWLEeeU5LD2312PpA" name="MessageRecv1" covered="_VPDBQDWLEeeU5LD2312PpA" message="_zwhmkDWLEeeU5LD2312PpA"/>
+    <message xmi:type="uml:Message" xmi:id="_uMZPoDWLEeeU5LD2312PpA" name="OrderShippingRequest()" receiveEvent="_uMZPojWLEeeU5LD2312PpA" sendEvent="_uMZPoTWLEeeU5LD2312PpA"/>
+    <message xmi:type="uml:Message" xmi:id="_xxUu8DWLEeeU5LD2312PpA" name="OrderShippingResponse()" receiveEvent="_xxVWATWLEeeU5LD2312PpA" sendEvent="_xxVWADWLEeeU5LD2312PpA"/>
+    <message xmi:type="uml:Message" xmi:id="_zwhmkDWLEeeU5LD2312PpA" name="ShippingConfirmation" receiveEvent="_zwhmkjWLEeeU5LD2312PpA" sendEvent="_zwhmkTWLEeeU5LD2312PpA"/>
+  </packagedElement>
+</uml:Model>
